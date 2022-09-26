@@ -14,22 +14,21 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### 🛠 Installation & Set Up
 
-### Setup
+If you dont have Ruby installed on your computer, you can download it from [here](https://www.ruby-lang.org/en/downloads/).
 
-### Install
+If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
 
-### Usage
+[Download the ZIP from this location](https://github.com/piesieomane/oop-school-library/archive/refs/heads/main.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
 
-### Run tests
+Ones you have the files on your machine, you can run the app by running the following command in your terminal:
 
-### Deployment
+```bash
+ruby main.rb
+```
 
 ## Authors
 
