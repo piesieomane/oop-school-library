@@ -17,4 +17,12 @@ class Person
             return false
         end
     end
+
+    def can_use_services?
+        if is_of_age? || @parent_permission
+            return true
+        else
+            return false
+        end
+    end
 end
