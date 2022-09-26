@@ -8,4 +8,13 @@ class Person
         @id = id
         @parent_permission = parent_permission
     end
+
+    Private
+    def is_of_age?
+        if @age >= 18
+            return true
+        else
+            return false
+        end
+    end
 end
