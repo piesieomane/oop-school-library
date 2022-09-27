@@ -16,5 +16,5 @@ class CapitalizeDecorator < Nameable
     end
 end
 
-class TrimmerDecorator < Nameable
+class TrimmerDecorator < BaseDecorator
 end
