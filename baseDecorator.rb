@@ -15,3 +15,6 @@ class CapitalizeDecorator < Nameable
         @nameable.correct_name.capitalize
     end
 end
+
+class TrimmerDecorator < Nameable
+end
