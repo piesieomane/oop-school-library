@@ -17,4 +17,11 @@ class CapitalizeDecorator < Nameable
 end
 
 class TrimmerDecorator < BaseDecorator
+    def correct_name
+        if @nameable.correct_name.length > 10
+            super[0..9]
+        else
+            super
+        end
+    end
 end
