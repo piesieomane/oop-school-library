@@ -11,4 +11,8 @@ class Student < Person
   def play_hockey
     '¯\(ツ)/¯'
   end
+
+  def classroom=(classroom)
+    @classroom = classroom
+  end
 end
