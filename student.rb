@@ -13,6 +13,6 @@ class Student < Person
   end
 
   def classroom=(classroom)
-    @classroom = classroom
+    @classroom = classroo
   end
 end
