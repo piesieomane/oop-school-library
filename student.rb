@@ -13,6 +13,7 @@ class Student < Person
   end
 
   def classroom=(classroom)
-    @classroom = classroo
+    @classroom = classroom
+    classroom.add_student(self) unless classroom.students.include?(self)
   end
 end
