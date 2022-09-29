@@ -46,9 +46,17 @@ def create_a_person
 end
 
 def create_a_book
+    puts 'Title:'
+    title = gets.chomp
+    puts 'Author:'
+    author = gets.chomp
+    book = Book.new(title, author)
+    @books << book
+    puts 'Book created'
 end
 
 def create_a_rental
+
 end
 
 def list_all_rentals_for_a_person
