@@ -1,10 +1,11 @@
 require_relative 'App'
 
 app = App.new
+# puts app.create_a_book
 
 def main
   puts 'Welcome to School Library App!'
-  puts
+  puts  '-----------------------------'
   puts 'Please choose an option by entering a number:'
   puts '1 - List all books'
   puts '2 - List all people'
@@ -13,24 +14,25 @@ def main
   puts '5 - Create a rental'
   puts '6 - List all rentals for a given person id'
   puts '7 - Exit'
-  puts
+  puts '-----------------------------'
 
-    option = gets.chomp
+    optionInteger = gets.chomp
+    option = optionInteger.to_i
 
     case option
-    when '1'
-      list_all_books
-    when '2'
-      list_all_people
-    when '3'
-      create_a_person
-    when '4'
-      create_a_book
-    when '5'
-      create_a_rental
-    when '6'
-      list_all_rentals_for_person_id
-    when '7'
+    when 1
+      app.list_all_books
+    when 2
+      app.list_all_people
+    when 3
+      app.create_a_person
+    when 4
+      app.create_a_book
+    when 5
+      app.create_a_rental
+    when 6
+      app.list_all_rentals_for_person_id
+    when 7
       puts 'Thank you for using this app!'
       exit 0
     else
