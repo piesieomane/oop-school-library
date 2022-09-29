@@ -8,7 +8,7 @@ class Person < Nameable
     super()
     @name = name
     @age = age
-    @id = Random.rand(1..1000)
+    @id = Random.rand(1...1000)
     @parent_permission = parent_permission
     @rentals = []
   end
