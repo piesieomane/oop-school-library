@@ -43,6 +43,7 @@ def create_a_person
         puts 'Specialization:'
         specialization = gets.chomp
         person = Teacher.new(age, specialization, name)
+        @people << person
     end
 end
 
