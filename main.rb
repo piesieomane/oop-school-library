@@ -1,6 +1,6 @@
 require_relative 'App'
 
-app = App.new
+
 # puts app.create_a_book
 
 def main
@@ -15,7 +15,7 @@ def main
   puts '6 - List all rentals for a given person id'
   puts '7 - Exit'
   puts '-----------------------------'
-
+  app = App.new
     optionInteger = gets.chomp
     option = optionInteger.to_i
 

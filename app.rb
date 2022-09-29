@@ -13,8 +13,12 @@ class App
         @rentals = []
     end
 def list_all_books
+    if @books.length > 0
     @books.each do |book|
         puts "Title: #{book.title}, Author: #{book.author}"
+    end
+    else
+    puts 'No books found'
     end
 end
 
