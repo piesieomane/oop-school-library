@@ -62,6 +62,7 @@ def create_a_rental
     @books.each_with_index do |book, index|
         puts "#{index}) Title: #{book.title}, Author: #{book.author}"
     end
+    puts 'Book number:'
     book_index = gets.chomp.to_i
     book = @books[book_index]
     puts 'Select a person from the following list by number (not id)'
@@ -76,5 +77,11 @@ def create_a_rental
 end
 
 def list_all_rentals_for_a_person
+    puts 'ID of person:'
+    id = gets.chomp.to_i
+    puts 'Rentals:'
+    @rentals.each do |rental|
+        puts "Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}" if rental.person.id == id
+    end
 end
 end
