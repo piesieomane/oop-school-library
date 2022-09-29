@@ -38,6 +38,7 @@ def create_a_person
         parent_permission = gets.chomp
         parent_permission = parent_permission.downcase == 'y'
         person = Student.new(age, name, parent_permission)
+        @people << person
     else
         puts 'Specialization:'
         specialization = gets.chomp
