@@ -6,6 +6,8 @@ require_relative 'teacher'
 
 
 def list_all_books
+    books = book.new();
+    books.rentals.each {|book| puts "#{book.title}, #{book.author}"}
 end
 
 def list_all_people
