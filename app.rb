@@ -14,6 +14,11 @@ class App
     @rentals = []
   end
 
+  def start
+    puts 'Welcome to School Library App!'
+    list_of_options
+  end
+
   def list_all_books
     if @books.length.positive?
       @books.each do |book|
