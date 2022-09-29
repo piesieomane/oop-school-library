@@ -17,6 +17,9 @@ def list_all_books
 end
 
 def list_all_people
+    @people.each do |person|
+        puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+    end
 end
 
 def create_a_person
