@@ -1,4 +1,4 @@
-require_relative 'App'
+require_relative 'app'
 
 # puts app.create_a_book
 def list_of_options
