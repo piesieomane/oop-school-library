@@ -28,7 +28,7 @@ def case_options(option)
   when 5
     create_a_rental
   when 6
-    list_all_rentals_for_a_given_person_id
+    list_all_rentals
   end
 end
 
@@ -37,7 +37,7 @@ def extra_options(option)
   when 7
     puts 'Thank you for using this app!'
   else
-    puts 'That is not a valid input'
+    list_of_options
   end
 end
 

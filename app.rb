@@ -57,7 +57,7 @@ class App
     puts 'Has parent permission? [Y/N]'
     parent_permission = gets.chomp
     parent_permission = parent_permission.downcase == 'y'
-    student = Student.new(age, name, parent_permission)
+    student = Student.new(nil, age, name, parent_permission)
     @people << student
     puts 'Person(Student) created successfully'
   end
@@ -103,12 +103,12 @@ class App
     @rentals << Rental.new(date, person, book)
   end
 
-  def list_all_rentals_for_a_person
+  def list_all_rentals
     puts 'ID of person:'
     id = gets.chomp.to_i
     puts 'Rentals:'
-    @rentals.each do |rental|
-      puts "Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}" if rental.person.id == id
+    @rentals.select { |rental| rental.person.id == id }.each do |rental|
+      puts "Date: #{rental.date}, Book '#{rental.book.title}' by #{rental.book.author}"
     end
   end
 end
