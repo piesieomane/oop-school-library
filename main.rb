@@ -1,5 +1,5 @@
 require_relative 'app'
-
+require 'pry'
 # puts app.create_a_book
 def list_of_options
   puts 'Please choose an option by entering a number:'
@@ -10,7 +10,7 @@ def list_of_options
   puts '5 - Create a rental'
   puts '6 - List all rentals for a given person id'
   puts '7 - Exit'
-  option_integer = gets.chomp
+  option_integer = gets.chomp.to_i
   case_options(option_integer)
   extra_options(option_integer)
 end
